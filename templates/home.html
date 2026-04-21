@@ -1,0 +1,12 @@
+{% extends "layouts.html" %}
+{% block content %}
+    <h1>King Monish</h1>
+
+    {% for post in posts %}
+
+        <h2>{{post.name}}</h2>
+
+        <p>{{post.work}}</p>
+    {% endfor %}
+    
+{% endblock %}
